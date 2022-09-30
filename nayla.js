@@ -174,29 +174,29 @@ text: `Halo @${sender.split("@")[0]}👋
 • *Download* : ${listmenu.download.length}
 • *Stress* : ${listmenu.stress.length}
 • *Search* : ${listmenu.search.length}\n\n` + menu,
-title: "*[ LISTMENU ]*",
+title: "*[ List Menu ]*",
 mentions:[sender],
-buttonText: "OPEN",
+buttonText: "Buka",
 sections:  [{title: "Berikut adalah list menu bot ini",
 rows: [
-{title: "(🚹) UTAMA", rowId: prefix + "utama"},
-{title: "(🔃) RANDOM", rowId: prefix + "random"},
-{title: "(🖍) CREATIF", rowId: prefix + "creatif"},
-{title: "(⬇) DOWNLOAD", rowId: prefix + "download"},
-{title: "(🔊) AUDIO", rowId: prefix + "audio"},
-{title: "(🃏) MAKER", rowId: prefix + "maker"},
-{title: "(1⃣) TAGV", rowId: prefix + "tagv"},
-{title: "(2⃣) TAGX", rowId: prefix + "tagx"},
-{title: "(🎊) GAME", rowId: prefix + "game"},
-{title: "(🥶) HACKER", rowId: prefix + "hacker"},
-{title: "(👨‍✈️) OWNER", rowId: prefix + "ownerr"},
-{title: "(🔧) STORAGE", rowId: prefix + "storage"},
-{title: "(👨‍👨‍👦‍👦) GROUP", rowId: prefix + "group"},
-{title: "(🐚) KERANGAJAIB", rowId: prefix + "kerangajaib"},
-{title: "(❓) CEK", rowId: prefix + "cek"},
-{title: "(🔄) RANDOMTAG", rowId: prefix + "randomtag"},
-{title: "(🔍) SEARCH", rowId: prefix + "search"},
-{title: "(🤥) STRESS", rowId: prefix + "stress"}
+{title: "📜⟩ Menu Utama", rowId: prefix + "utama"},
+{title: "✨⟩ Random", rowId: prefix + "random"},
+{title: "🖼️⟩ Makekr", rowId: prefix + "creatif"},
+{title: "📍⟩ Downloader", rowId: prefix + "download"},
+{title: "🔊⟩ Audio", rowId: prefix + "audio"},
+{title: "🃏⟩ MAKER", rowId: prefix + "maker"},
+{title: "1⃣⟩ Tag V", rowId: prefix + "tagv"},
+{title: "2⃣⟩ Tag X", rowId: prefix + "tagx"},
+{title: "🎊⟩ Game", rowId: prefix + "game"},
+{title: "💻⟩ Henker", rowId: prefix + "hacker"},
+{title: "👨‍✈️⟩ Owner", rowId: prefix + "ownerr"},
+{title: "🔧⟩ Storage", rowId: prefix + "storage"},
+{title: "🗃️⟩ Group", rowId: prefix + "group"},
+{title: "(🐚) Kerang Ajaib", rowId: prefix + "kerangajaib"},
+{title: "🕳️⟩ Cek", rowId: prefix + "cek"},
+{title: "🔄⟩ Random Tag", rowId: prefix + "randomtag"},
+{title: "🔍⟩ Search", rowId: prefix + "search"},
+{title: "😶⟩ Stress", rowId: prefix + "stress"}
 
 ]}]
 })
@@ -226,7 +226,7 @@ case 'waifu':case 'lick':case 'kiss':case 'awoo':case 'hug':case 'cry':case 'cud
 if (cekUser("id", sender) == null) return reply("Kamu belum terdaftar di database bot, Silahkan daftar terlebih dahulu, gunakan command #daftar")
 reply("[❗] SEDANG DIPROSES")
 fetchJson(`https://api.waifu.pics/sfw/${command}`).then(x => {
-nayla.sendMessage(from, {image:{url:x.url}, caption:"😄", mentions:[sender]},{quoted:nay1})})
+nayla.sendMessage(from, {image:{url:x.url}, caption:"Done", mentions:[sender]},{quoted:nay1})})
 break 
 case 'slip':
 if (cekUser("id", sender) == null) return reply("Kamu belum terdaftar di database bot, Silahkan daftar terlebih dahulu, gunakan command #daftar")
@@ -251,7 +251,7 @@ Object.keys(result).forEach((i) => {
 x4.push(result[i])
 })
 const x5 = x4[Math.floor(Math.random() * (x4.length))]
-nayla.sendMessage(from, {image:{url:x5}, caption:"🤯", mentions:[sender]},{quoted:nay1})
+nayla.sendMessage(from, {image:{url:x5}, caption:"Done", mentions:[sender]},{quoted:nay1})
 });
 break
 case 'pin': case 'pinterest': 
@@ -264,14 +264,14 @@ Object.keys(result).forEach((i) => {
 x6.push(result[i])
 })
 const x7 = x6[Math.floor(Math.random() * (x6.length))]
-nayla.sendMessage(from, {image:{url:x7}, caption:"🤯", mentions:[sender]},{quoted:nay1})
+nayla.sendMessage(from, {image:{url:x7}, caption:"Done", mentions:[sender]},{quoted:nay1})
 });
 break
 case 'ssweb': case 'ss': 
 if (cekUser("id", sender) == null) return reply("Kamu belum terdaftar di database bot, Silahkan daftar terlebih dahulu, gunakan command #daftar")
 if (!q) return reply("Masukkan url, contoh? https://google.com")
 reply("[❗] SEDANG DIPROSES")
-nayla.sendMessage(from, {image:{url:`https://api.popcat.xyz/screenshot?url=${q}`}, caption:"😗", mentions:[sender]},{quoted:nay1})
+nayla.sendMessage(from, {image:{url:`https://api.popcat.xyz/screenshot?url=${q}`}, caption:"Done", mentions:[sender]},{quoted:nay1})
 break
 case 'randomcolor': 
 if (cekUser("id", sender) == null) return reply("Kamu belum terdaftar di database bot, Silahkan daftar terlebih dahulu, gunakan command #daftar")
@@ -399,8 +399,8 @@ if (cekUser("id", sender) == null) return reply("Kamu belum terdaftar di databas
 const x25 = "https://i.ibb.co/vZ67WtJ/STK-20220828-WA0024.webp"
 const x26 = "https://i.ibb.co/vq7nwnS/STK-20220828-WA0025.webp"
 const x27 = [true, false][Math.floor(Math.random() * ([true, false].length))]
-if (x27 == true) { nayla.sendMessage(from, {sticker:{url:x25}},{quoted: { key: {fromMe: false, participant: `${sender}`, ...(from ? { remoteJid: "status@broadcast" } : {})},message: {"conversation": `[❎] Kamu tidak ${body.slice(4).trim().split(/ +/).shift().toLowerCase()} sama sekali🥴`}} })}
-if (x27 == false) { nayla.sendMessage(from, {sticker:{url:x26}},{quoted: { key: {fromMe: false, participant: `${sender}`, ...(from ? { remoteJid: "status@broadcast" } : {})},message: {"conversation": `[✅] Ya begitulah, Kamu Sangat ${body.slice(4).trim().split(/ +/).shift().toLowerCase()} Sekali 🤥`}} }) }
+if (x27 == true) { nayla.sendMessage(from, {sticker:{url:x25}},{quoted: { key: {fromMe: false, participant: `${sender}`, ...(from ? { remoteJid: "status@broadcast" } : {})},message: {"conversation": `[❎] Kamu tidak ${body.slice(4).trim().split(/ +/).shift().toLowerCase()} sama sekali :D`}} })}
+if (x27 == false) { nayla.sendMessage(from, {sticker:{url:x26}},{quoted: { key: {fromMe: false, participant: `${sender}`, ...(from ? { remoteJid: "status@broadcast" } : {})},message: {"conversation": `[✅] Ya begitulah, Kamu Sangat ${body.slice(4).trim().split(/ +/).shift().toLowerCase()} Sekali :D`}} }) }
 break
 case 'apakah': case 'apa':
 if (cekUser("id", sender) == null) return reply("Kamu belum terdaftar di database bot, Silahkan daftar terlebih dahulu, gunakan command #daftar")
@@ -839,20 +839,20 @@ var x50 = []
 Object.keys(groupMembers).forEach((i) => {  
 x50.push(groupMembers[i].id)})
 const x51 = x50[Math.floor(Math.random() * (x50.length))]
-nayla.sendMessage(from, {sticker:{url:"./db/media/sticker.webp"}},{quoted:{ key: {fromMe: false, participant: `${x51}`, ...(from ? { remoteJid: "status@broadcast" } : {})},message: {"conversation": `Gw yang Ter${body.slice(2).trim().split(/ +/).shift().toLowerCase()} Disini😅`}}})
+nayla.sendMessage(from, {sticker:{url:"./db/media/sticker.webp"}},{quoted:{ key: {fromMe: false, participant: `${x51}`, ...(from ? { remoteJid: "status@broadcast" } : {})},message: {"conversation": `Gw yang Ter${body.slice(2).trim().split(/ +/).shift().toLowerCase()} Disini :v`}}})
 break 
 
 case 'girlneko': case 'gilrneko':
 if (cekUser("id", sender) == null) return reply("Kamu belum terdaftar di database bot, Silahkan daftar terlebih dahulu, gunakan command #daftar")
 if (!q1 && !q2) return reply("Masukkan text1&text2\nContoh? #girlneko aku&kamu")
 reply("[❗] SEDANG DIPROSES")
-nayla.sendMessage(from, {image:{url:`https://ziy.herokuapp.com/api/maker/girlneko?text1=${q1}&text2=${q2}&apikey=xZiyy`}, caption:"👍", mentions:[sender]},{quoted:nay1})
+nayla.sendMessage(from, {image:{url:`https://ziy.herokuapp.com/api/maker/girlneko?text1=${q1}&text2=${q2}&apikey=xZiyy`}, caption:"Done", mentions:[sender]},{quoted:nay1})
 break
 case 'sadboy':
 if (cekUser("id", sender) == null) return reply("Kamu belum terdaftar di database bot, Silahkan daftar terlebih dahulu, gunakan command #daftar")
 if (!q1 && !q2) return reply("Masukkan text1&text2\nContoh? #sadboy aku&kamu")
 reply("[❗] SEDANG DIPROSES")
-nayla.sendMessage(from, {image:{url:`https://ziy.herokuapp.com/api/maker/sadboy?text1=${q1}&text2=${q2}&apikey=xZiyy`}, caption:"👍", mentions:[sender]},{quoted:nay1})
+nayla.sendMessage(from, {image:{url:`https://ziy.herokuapp.com/api/maker/sadboy?text1=${q1}&text2=${q2}&apikey=xZiyy`}, caption:"Done", mentions:[sender]},{quoted:nay1})
 break 
 case 'kaneki': case 'rem': case 'lolimaker':
 if (cekUser("id", sender) == null) return reply("Kamu belum terdaftar di database bot, Silahkan daftar terlebih dahulu, gunakan command #daftar")
@@ -994,32 +994,32 @@ await reply(evaled)
 if (!isCmd) {
 if (!isAntilink) return
 if (!isGroup) return
-if (budy.includes("http")) { if (isGroupAdmins) return reply("Admin Bebas melanggar 👍")
+if (budy.includes("http")) { if (isGroupAdmins) return reply("Admin Bebas :D")
 if (!isBotGroupAdmins) return reply("Antilink On, Bot bukan admin, perintah di batalkan")
 reply("[ *ANTILINK* ]")
 await nayla.groupParticipantsUpdate(from, [sender], "remove")}
-if (budy.includes("https")) { if (isGroupAdmins) return reply("Admin Bebas melanggar 👍")
+if (budy.includes("https")) { if (isGroupAdmins) return reply("Admin Bebas :D")
 if (!isBotGroupAdmins) return reply("Antilink On, Bot bukan admin, perintah di batalkan")
 reply("[ *ANTILINK* ]")
 await nayla.groupParticipantsUpdate(from, [sender], "remove")}
-if (budy.includes(".com")) { if (isGroupAdmins) return reply("Admin Bebas melanggar 👍")
+if (budy.includes(".com")) { if (isGroupAdmins) return reply("Admin Bebas :D")
 if (!isBotGroupAdmins) return reply("Antilink On, Bot bukan admin, perintah di batalkan")
 reply("[ *ANTILINK* ]")
 await nayla.groupParticipantsUpdate(from, [sender], "remove")}
-if (budy.includes("herokuapp")) { if (isGroupAdmins) return reply("Admin Bebas melanggar 👍")
+if (budy.includes("herokuapp")) { if (isGroupAdmins) return reply("Admin Bebas :D")
 if (!isBotGroupAdmins) return reply("Antilink On, Bot bukan admin, perintah di batalkan")
 reply("[ *ANTILINK* ]")
 await nayla.groupParticipantsUpdate(from, [sender], "remove")}
-if (budy.includes(".xyz")) { if (isGroupAdmins) return reply("Admin Bebas melanggar 👍")
+if (budy.includes(".xyz")) { if (isGroupAdmins) return reply("Admin Bebas :D")
 if (!isBotGroupAdmins) return reply("Antilink On, Bot bukan admin, perintah di batalkan")
 reply("[ *ANTILINK* ]")
 await nayla.groupParticipantsUpdate(from, [sender], "remove")}
-if (budy.includes("t.me")) { if (isGroupAdmins) return reply("Admin Bebas melanggar 👍")
+if (budy.includes("t.me")) { if (isGroupAdmins) return reply("Admin Bebas :D")
 if (!isBotGroupAdmins) return reply("Antilink On, Bot bukan admin, perintah di batalkan")
 reply("[ *ANTILINK* ]")
 await nayla.groupParticipantsUpdate(from, [sender], "remove")}
 }
-if (budy == prefix + "sc"){reply("https://semawur.com/6df19ZzNz")} // JANGAN DI UBAH:(
+if (budy == prefix + "sc"){reply("https://nekopoi.care")} // JANGAN DI UBAH:(
 }} catch (err) {
 console.log(color('[ERROR]', 'red'), err)
 }}
