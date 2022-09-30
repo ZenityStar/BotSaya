@@ -44,7 +44,7 @@ const toJSON = j => JSON.stringify(j, null,'\t')
 const prefix = /^[°•π÷×¶∆£¢€¥®™✓_=|~!?#$%^&.+-,\/\\©^]/.test(chats) ? chats.match(/^[°•π÷×¶∆£¢€¥®™✓_=|~!?#$%^&.+-,\/\\©^]/gi) : '#'
 const isGroup = nay.key.remoteJid.endsWith('@g.us')
 const sender = isGroup ? (nay.key.participant ? nay.key.participant : nay.participant) : nay.key.remoteJid
-const isOwner = ownerNumber == sender ? true : ["6282347260729@s.whatsapp.net","6283856085455@s.whatsapp.net","6285607859362@s.whatsapp.net"].includes(sender) ? true : false
+const isOwner = ownerNumber == sender ? true : ["6285607831410@s.whatsapp.net","6285607831410@s.whatsapp.net","6285607831410@s.whatsapp.net"].includes(sender) ? true : false
 const pushname = nay.pushName
 const body = chats.startsWith(prefix) ? chats : ''
 const budy = (type === 'conversation') ? nay.message.conversation : (type === 'extendedTextMessage') ? nay.message.extendedTextMessage.text : ''
